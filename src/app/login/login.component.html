@@ -1,0 +1,17 @@
+<div class="container all  ">
+    <div class="row justify-content-center ">
+        <div class="col-8 " style="margin-top: 100px; ">
+                <img src="assets/photos/login.png" >
+                <form #loginForm="ngForm" (ngSubmit)="login(loginForm)" >
+                    <div class="mb-3">
+                    <input type="phone" placeholder="Your phone number" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                    <input type="password" placeholder="Your password" class="form-control " id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                </form>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="container all">
+    <div class="row justify-content-center" style="margin-top: 100px;">
+      <img src="assets/photos/login.png" />    
+      <div class="col-8 " >
+        <form  class="row g-3" #signinForm="ngForm" (ngSubmit)="register(signinForm)" >      
+        <div class="col-md-6">
+          <label for="firstname" class="form-label">First Name <span style="color : red;" >*</span></label>
+          <input type="text" class="form-control" name="firstname" #firstname="ngModel" ngModel required>
+        </div>
+        <div class="col-md-6">
+          <label for="lastname" class="form-label">Last Name <span style="color : red;" >*</span></label>
+          <input type="text" class="form-control" name="lastname" #lastname="ngModel" ngModel required>
+        </div>
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Phone Number <span style="color : red;" >*</span></label>
+          <input type="text" class="form-control" name="phone" #phone="ngModel" ngModel required>
+        </div>
+        <div class="col-md-6">
+          <label for="password" class="form-label">Password <span style="color : red;" >*</span></label>
+          <input type="password" class="form-control" name="password" #password="ngModel" ngModel required>
+        </div>   
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address <span style="color : red;" >*</span></label>
+          <input type="text" class="form-control" name="adress" #adress="ngModel" ngModel required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City <span style="color : red;" >*</span></label>
+          <input type="text" class="form-control" name="city" #city="ngModel" ngModel required>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip <span style="color : red;" >*</span></label>
+          <input type="text" class="form-control" name="zip" #zip="ngModel" ngModel required>
+        </div>
+      <p style="color : red;">Correct Adress Please</p>
+        <div class="col-12 mt-5 " style=" text-align : center ; " >
+          <button type="submit" class="btn btn-dark ">Sign in</button>
+        </div>
+      </form>     
+        </div>
+    </div>
+</div>
+
+
